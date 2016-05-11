@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2751,9 +2751,9 @@ hole headers</text>
 <text x="17.78" y="27.94" size="1.778" layer="97">0.1" through
 hole headers</text>
 <text x="73.66" y="172.72" size="0.6096" layer="97">C2 &amp; C3 to be
-near U1.27</text>
+near U1G4.27</text>
 <text x="96.52" y="172.72" size="0.6096" layer="97">C4 to be
-near U1.25</text>
+near U1G4.25</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
