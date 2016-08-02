@@ -18867,10 +18867,12 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="J4" library="SparkFun-Connectors" deviceset="AUDIO-JACK3" device=""/>
+<part name="J4" library="SparkFun-Connectors" deviceset="AUDIO-JACK3" device="">
+<attribute name="PROD_ID" value="CONN-10676"/>
+</part>
 <part name="D4" library="SparkFun-DiscreteSemi" deviceset="PESD1CAN" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D5" library="SparkFun-DiscreteSemi" deviceset="PESD1CAN" device=""/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="PESD1CAN" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="H1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="H2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
@@ -18891,7 +18893,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="FOUR_LAYER_WARNING" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
-<part name="J10" library="SparkFun-Connectors" deviceset="AUDIO-JACK3" device=""/>
+<part name="J10" library="SparkFun-Connectors" deviceset="AUDIO-JACK3" device="">
+<attribute name="PROD_ID" value="CONN-10676"/>
+</part>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
 <part name="LOGO4" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
@@ -18972,10 +18976,12 @@ JUMPER</text>
 <instance part="SUPPLY8" gate="G$1" x="167.386" y="62.992"/>
 <instance part="SUPPLY9" gate="G$1" x="55.88" y="119.38"/>
 <instance part="SUPPLY11" gate="G$1" x="223.52" y="104.14"/>
-<instance part="J4" gate="G$1" x="190.5" y="76.2" rot="MR180"/>
+<instance part="J4" gate="G$1" x="190.5" y="76.2" rot="MR180">
+<attribute name="PROD_ID" x="190.5" y="76.2" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
 <instance part="D4" gate="G$1" x="223.52" y="71.12" rot="MR180"/>
 <instance part="GND4" gate="1" x="241.3" y="40.64"/>
-<instance part="D5" gate="G$1" x="223.52" y="43.18"/>
+<instance part="D1" gate="G$1" x="223.52" y="43.18"/>
 <instance part="SUPPLY1" gate="G$1" x="22.86" y="177.8"/>
 <instance part="H1" gate="G$1" x="246.38" y="33.02"/>
 <instance part="H2" gate="G$1" x="243.84" y="33.02"/>
@@ -18996,7 +19002,9 @@ JUMPER</text>
 <instance part="U$1" gate="G$1" x="213.36" y="27.94"/>
 <instance part="LOGO1" gate="G$1" x="81.28" y="10.16"/>
 <instance part="LOGO2" gate="G$1" x="88.9" y="0"/>
-<instance part="J10" gate="G$1" x="190.5" y="53.34" rot="MR180"/>
+<instance part="J10" gate="G$1" x="190.5" y="53.34" rot="MR180">
+<attribute name="PROD_ID" x="190.5" y="53.34" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
 <instance part="GND16" gate="1" x="198.12" y="43.18"/>
 <instance part="LOGO3" gate="G$1" x="88.9" y="0"/>
 <instance part="LOGO4" gate="G$1" x="81.28" y="10.16"/>
@@ -19100,7 +19108,7 @@ JUMPER</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="238.76" y1="66.04" x2="241.3" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="66.04" x2="241.3" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="D5" gate="G$1" pin="3"/>
+<pinref part="D1" gate="G$1" pin="3"/>
 <wire x1="241.3" y1="48.26" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="48.26" x2="241.3" y2="48.26" width="0.1524" layer="91"/>
 <junction x="241.3" y="48.26"/>
@@ -19209,7 +19217,7 @@ JUMPER</text>
 <pinref part="J4" gate="G$1" pin="EARTH"/>
 <wire x1="208.28" y1="45.72" x2="208.28" y2="48.26" width="0.1524" layer="91"/>
 <junction x="208.28" y="71.12"/>
-<pinref part="D5" gate="G$1" pin="2"/>
+<pinref part="D1" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="48.26" x2="208.28" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="45.72" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="EARTH"/>
