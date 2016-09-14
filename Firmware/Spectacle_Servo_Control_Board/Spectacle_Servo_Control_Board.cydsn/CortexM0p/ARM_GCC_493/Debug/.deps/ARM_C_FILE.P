@@ -1,0 +1,16 @@
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/CortexM0p/ARM_GCC_493/Debug/cyfitter_cfg.o : C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/CyLib.h C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
+
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c : 
+
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+C:/Dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board/Spectacle_Servo_Control_Board.cydsn/Generated_Source/PSoC4/cytypes.h : 
+

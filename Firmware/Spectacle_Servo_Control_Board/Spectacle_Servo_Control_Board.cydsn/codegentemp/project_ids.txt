@@ -1,0 +1,5 @@
+C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\Spectacle_Servo_Control_Board.cyprj|8a6c59d6-c888-4892-8e9a-e5c3cac61aa6
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a62f726d-42f4-469e-96a4-57e2d99b5ce4
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|f06be881-9d22-422f-96c1-2730b21cfa2e
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7b77b82e-2f9a-4a06-96c8-74884aac97ff
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|290748d0-eaae-4f38-88f8-f44622f17665
