@@ -2,8 +2,6 @@ net ClockBlock_HFCLK
 	term   ":m0s8clockblockcell.hfclk"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_9.clock"
 	term   ":interrupt_9.clock"
-	switch ":m0s8clockblockcell.hfclk==>:interrupt_18.clock"
-	term   ":interrupt_18.clock"
 end ClockBlock_HFCLK
 net Net_385
 	term   ":m0s8tcpwmcell_1.line_out"
@@ -26,18 +24,19 @@ net Net_407
 	switch ":ioport1:smartio_mux_in2.smartio_mux_in==>:ioport1:pin2.pin_input"
 	term   ":ioport1:pin2.pin_input"
 end Net_407
-net Net_464
-	term   ":m0s8tcpwmcell_4.interrupt"
-	switch ":m0s8tcpwmcell_4.interrupt==>:interrupt_idmux_18.in_0"
-	switch ":interrupt_idmux_18.interrupt_idmux_18__out==>:interrupt_18.interrupt"
-	term   ":interrupt_18.interrupt"
-end Net_464
 net Net_575
 	term   ":m0s8scbcell_2.interrupt"
 	switch ":m0s8scbcell_2.interrupt==>:interrupt_idmux_9.in_0"
 	switch ":interrupt_idmux_9.interrupt_idmux_9__out==>:interrupt_9.interrupt"
 	term   ":interrupt_9.interrupt"
 end Net_575
+net Net_651
+	term   ":m0s8tcpwmcell_4.line_out"
+	switch ":m0s8tcpwmcell_4.line_out==>:ioport2:hsiom_out0.fixed_ACT_0"
+	switch ":ioport2:hsiom_out0.hsiom0_out==>:ioport2:smartio_mux_in0.direct_out"
+	switch ":ioport2:smartio_mux_in0.smartio_mux_in==>:ioport2:pin0.pin_input"
+	term   ":ioport2:pin0.pin_input"
+end Net_651
 net Net_70
 	term   ":m0s8tcpwmcell_0.line_out"
 	switch ":m0s8tcpwmcell_0.line_out==>:ioport3:hsiom_out0.fixed_ACT_0"

@@ -2,7 +2,7 @@
 --	Conversion of Spectacle_Servo_Control_Board.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Sep 13 12:49:23 2016
+--	Mon Oct 10 09:11:02 2016
 --
 
 USE cypress.cypress.all;
@@ -173,19 +173,23 @@ SIGNAL tmpFB_0__Servo_3_net_0 : bit;
 SIGNAL tmpIO_0__Servo_3_net_0 : bit;
 TERMINAL tmpSIOVREF__Servo_3_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Servo_3_net_0 : bit;
-SIGNAL Net_464 : bit;
-SIGNAL \SystemTimer:Net_81\ : bit;
-SIGNAL \SystemTimer:Net_75\ : bit;
-SIGNAL \SystemTimer:Net_69\ : bit;
-SIGNAL \SystemTimer:Net_66\ : bit;
-SIGNAL \SystemTimer:Net_82\ : bit;
-SIGNAL \SystemTimer:Net_72\ : bit;
-SIGNAL Net_568 : bit;
-SIGNAL Net_567 : bit;
-SIGNAL Net_569 : bit;
-SIGNAL Net_570 : bit;
-SIGNAL Net_571 : bit;
-SIGNAL Net_470 : bit;
+SIGNAL tmpOE__Servo_4_net_0 : bit;
+SIGNAL Net_651 : bit;
+SIGNAL tmpFB_0__Servo_4_net_0 : bit;
+SIGNAL tmpIO_0__Servo_4_net_0 : bit;
+TERMINAL tmpSIOVREF__Servo_4_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Servo_4_net_0 : bit;
+SIGNAL \PWM_4:Net_81\ : bit;
+SIGNAL \PWM_4:Net_75\ : bit;
+SIGNAL \PWM_4:Net_69\ : bit;
+SIGNAL \PWM_4:Net_66\ : bit;
+SIGNAL \PWM_4:Net_82\ : bit;
+SIGNAL \PWM_4:Net_72\ : bit;
+SIGNAL Net_661 : bit;
+SIGNAL Net_660 : bit;
+SIGNAL Net_662 : bit;
+SIGNAL Net_663 : bit;
+SIGNAL Net_659 : bit;
 SIGNAL tmpOE__LED_net_0 : bit;
 SIGNAL tmpFB_0__LED_net_0 : bit;
 SIGNAL tmpIO_0__LED_net_0 : bit;
@@ -631,7 +635,7 @@ Clock_1:cy_clock_v1_0
 		id=>"14ba8a7c-ee93-426d-b1d0-d654a8a80837",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"2000000000",
+		period=>"1000000000",
 		is_direct=>'0',
 		is_digital=>'0')
 	PORT MAP(clock_out=>Net_446,
@@ -888,33 +892,90 @@ Servo_3:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__Servo_3_net_0);
-tickInt:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10")
-	PORT MAP(int_signal=>Net_464);
-\SystemTimer:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
+Servo_4:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"0b741a12-2e23-4460-886a-041005b4e9df",
+		drive_mode=>"110",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"1",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"O",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(one),
+		y=>Net_651,
+		fb=>(tmpFB_0__Servo_4_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__Servo_4_net_0),
+		siovref=>(tmpSIOVREF__Servo_4_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>one,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>one,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Servo_4_net_0);
+\PWM_4:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"")
-	PORT MAP(clock=>Net_470,
+	PORT MAP(clock=>Net_446,
 		capture=>zero,
 		count=>one,
 		reload=>zero,
 		stop=>zero,
 		start=>zero,
-		underflow=>Net_568,
-		overflow=>Net_567,
-		compare_match=>Net_569,
-		line_out=>Net_570,
-		line_out_compl=>Net_571,
-		interrupt=>Net_464);
-Clock_2:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"cce41ba9-7fc5-43b9-a885-e5e399a3bc75",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"100000000",
-		is_direct=>'0',
-		is_digital=>'0')
-	PORT MAP(clock_out=>Net_470,
-		dig_domain_out=>open);
+		underflow=>Net_661,
+		overflow=>Net_660,
+		compare_match=>Net_662,
+		line_out=>Net_651,
+		line_out_compl=>Net_663,
+		interrupt=>Net_659);
 LED:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"d07c5904-1cfe-4cb0-91ce-c96ee249b2f6",
 		drive_mode=>"110",

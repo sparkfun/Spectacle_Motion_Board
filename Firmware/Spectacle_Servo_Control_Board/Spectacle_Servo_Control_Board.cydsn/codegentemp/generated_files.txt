@@ -69,13 +69,13 @@
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Servo_3.h" value="NONE;Servo_3" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Servo_3_aliases.h" value="NONE;Servo_3" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Servo_3_PM.c" value="ARM_C_FILE;Servo_3" />
-  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\tickInt.c" value="ARM_C_FILE;tickInt" />
-  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\tickInt.h" value="NONE;tickInt" />
-  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\SystemTimer.c" value="ARM_C_FILE;SystemTimer" />
-  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\SystemTimer.h" value="NONE;SystemTimer" />
-  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\SystemTimer_PM.c" value="ARM_C_FILE;SystemTimer" />
-  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Clock_2.c" value="ARM_C_FILE;Clock_2" />
-  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Clock_2.h" value="NONE;Clock_2" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Servo_4.c" value="ARM_C_FILE;Servo_4" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Servo_4.h" value="NONE;Servo_4" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Servo_4_aliases.h" value="NONE;Servo_4" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\Servo_4_PM.c" value="ARM_C_FILE;Servo_4" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\PWM_4.c" value="ARM_C_FILE;PWM_4" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\PWM_4.h" value="NONE;PWM_4" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\PWM_4_PM.c" value="ARM_C_FILE;PWM_4" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\LED.c" value="ARM_C_FILE;LED" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\LED.h" value="NONE;LED" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Servo_Control_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\LED_aliases.h" value="NONE;LED" />

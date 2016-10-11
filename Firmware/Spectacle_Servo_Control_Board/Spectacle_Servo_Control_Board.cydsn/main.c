@@ -10,10 +10,10 @@
  * ========================================
 */
 #include <project.h>
+#include <stdbool.h>
 
 #define I2C_BUFFER_SIZE 37
 #define I2C_BUFFER_RW_BOUNDARY 37
-
 
 volatile int32 systemTimer = 0;
 CY_ISR_PROTO(tickISR);
@@ -26,6 +26,7 @@ int main()
   PWM_1_Start();
   PWM_2_Start();
   PWM_3_Start();
+  PWM_4_Start();
   
   uint8 registerSpace[I2C_BUFFER_SIZE];
   EZI2C_Start();
@@ -33,28 +34,40 @@ int main()
   
   UART_Start();
   
-  SystemTimer_Start();
-  tickInt_StartEx(tickISR);
+  CyIntSetSysVector((SysTick_IRQn + 16), tickISR);
+  SysTick_Config(48);
     
-  uint8 *events;
-  int *basePos0;
-  int *move0;
-  int *dwell0;
+  uint8 *event0;
+  uint8 *mode0;
+  int *posA0;
+  int *posB0;
+  int *dwell0;  
+  uint8 cachedMode0;
+  int cachedPosA0;
+  int cachedPosB0;
+  int cachedDwell0;
   int32 tickCount = 0;
   int32 LEDTick = 0;
   int32 servo0Timer = 0;
   uint32 rxBuffer = 0;
   int i = 0;
-  events = registerSpace;
   
-  basePos0 = (int*)&registerSpace[2];
-  move0 = (int*)&registerSpace[4];
+  event0 = &registerSpace[0];
+  mode0 = &registerSpace[1];
+  posA0 = (int*)&registerSpace[2];
+  posB0 = (int*)&registerSpace[4];
   dwell0 = (int*)&registerSpace[6];
   
-  *basePos0 = 750;
-  *move0 = 750;
+  *event0 = 0;
+  *mode0 = 0;
+  *posA0 = 1500;
+  *posB0 = 1500;
   *dwell0 = 1000;
-  PWM_0_WriteCompare(*basePos0);
+  cachedDwell0 = 1000;
+  int currPos0 = *posA0;
+  bool pending0 = false;
+  bool active0 = false;
+  PWM_0_WriteCompare(*posA0);
   
   UART_UartPutString("Hello world");
   
@@ -78,15 +91,78 @@ int main()
           UART_UartPutChar(registerSpace[i]);
         }
       }
-      if (*events != 0)
+      if (*event0 != 0)
       {
-        *events = 0;
-        PWM_0_WriteCompare(*move0);
+        CyDelay(2); // Delay to make sure our I2C data has finished loading
+                    //  before we attempt to make use of it.
         servo0Timer = systemTimer;
+        cachedMode0 = *mode0;
+        cachedPosA0 = *posA0;
+        cachedPosB0 = *posB0;
+        cachedDwell0 = *dwell0;
+        *event0 = 0;
+        pending0 = true;
+        if (*mode0 == 0) 
+        {
+          PWM_0_WriteCompare(*posB0);
+        }
+        if (*mode0 == 1) // move from base to move or vice versa after delay
+        { 
+        }
+        if (*mode0 == 2) // "wag"
+        {
+          if (active0)
+          {
+            active0 = false;
+            pending0 = false;
+          }
+          else
+          {
+            active0 = true;
+          }
+        }
       }
-      if (systemTimer > servo0Timer + (*dwell0)*1000)
+      if (systemTimer > servo0Timer + (cachedDwell0)*1000)
       {
-        PWM_0_WriteCompare(*basePos0);
+        if (pending0)
+        {
+          servo0Timer = systemTimer;
+          pending0 = false;
+          if (cachedMode0 == 0)
+          {
+            active0 = false;
+            currPos0 = cachedPosA0;
+            PWM_0_WriteCompare(cachedPosA0);
+          }
+          if (cachedMode0 == 1)
+          {
+            active0 = false;
+            if (currPos0 == cachedPosA0)
+            {
+              currPos0 = cachedPosB0;
+              PWM_0_WriteCompare(cachedPosB0);
+            }
+            else
+            {
+              currPos0 = cachedPosA0;
+              PWM_0_WriteCompare(cachedPosA0);
+            }
+          }
+          if (cachedMode0 == 2 && active0)
+          {
+            pending0 = true;
+            if (currPos0 == cachedPosA0)
+            {
+              currPos0 = cachedPosB0;
+              PWM_0_WriteCompare(cachedPosB0);
+            }
+            else
+            {
+              currPos0 = cachedPosA0;
+              PWM_0_WriteCompare(cachedPosA0);
+            }
+          }
+        }
       }
     }
     // One Hz blinking LED heartbeat. Will probably be removed from production
@@ -108,8 +184,6 @@ int main()
 
 CY_ISR(tickISR)
 {
-  SystemTimer_ClearInterrupt(SystemTimer_INTR_MASK_TC);
-  tickInt_ClearPending();
   systemTimer++;
 }
 

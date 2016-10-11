@@ -135,7 +135,7 @@ extern uint8  PWM_3_initVar;
 #define PWM_3_TC_COMPARE_SWAP                (0lu)
 
 /* PWM Mode */
-#define PWM_3_PWM_PERIOD_VALUE               (10000lu)
+#define PWM_3_PWM_PERIOD_VALUE               (20000lu)
 #define PWM_3_PWM_PERIOD_BUF_VALUE           (65535lu)
 #define PWM_3_PWM_PERIOD_SWAP                (0lu)
 #define PWM_3_PWM_COMPARE_VALUE              (1500lu)
