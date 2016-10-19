@@ -1,4 +1,3 @@
-*_bom.*
 *.eep
 *.elf
 *.lst
@@ -11,3 +10,11 @@
 *.map
 *.b#?
 *.s#?
+*_bom.txt
+*CortexM*
+*Generated_Source
+*.cycdx
+*.cyfit
+*.rpt
+*codegentemp
+*swp

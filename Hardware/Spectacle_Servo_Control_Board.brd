@@ -185,6 +185,18 @@
 <text x="22.479" y="27.686" size="1.778" layer="21" font="vector" ratio="15" rot="R90">Animatronics</text>
 <text x="0.381" y="46.482" size="1.016" layer="21" font="vector" ratio="15">O/W/Y</text>
 <text x="20.574" y="46.482" size="1.016" layer="21" font="vector" ratio="15">O/W/Y</text>
+<text x="6.985" y="14.859" size="1.778" layer="21" font="vector" ratio="15">In</text>
+<text x="2.286" y="4.699" size="1.778" layer="21" font="vector" ratio="15">Out</text>
+<wire x1="2.032" y1="6.858" x2="2.032" y2="4.699" width="0.254" layer="21"/>
+<wire x1="2.032" y1="4.699" x2="2.286" y2="4.445" width="0.254" layer="21"/>
+<wire x1="2.286" y1="4.445" x2="6.35" y2="4.445" width="0.254" layer="21"/>
+<wire x1="6.35" y1="4.445" x2="6.604" y2="4.699" width="0.254" layer="21"/>
+<wire x1="6.604" y1="4.699" x2="6.604" y2="6.858" width="0.254" layer="21"/>
+<wire x1="6.731" y1="17.018" x2="6.731" y2="14.859" width="0.254" layer="21"/>
+<wire x1="6.731" y1="14.859" x2="6.985" y2="14.605" width="0.254" layer="21"/>
+<wire x1="6.985" y1="14.605" x2="9.398" y2="14.605" width="0.254" layer="21"/>
+<wire x1="9.398" y1="14.605" x2="9.652" y2="14.859" width="0.254" layer="21"/>
+<wire x1="9.652" y1="14.859" x2="9.652" y2="17.018" width="0.254" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
