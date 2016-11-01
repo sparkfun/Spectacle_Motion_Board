@@ -28,15 +28,15 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="29" name="tStop" color="15" fill="3" visible="no" active="no"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
@@ -56,9 +56,9 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="13" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -17072,6 +17072,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="7" y1="3.3" x2="9.4" y2="3.3" width="0.254" layer="21"/>
 <wire x1="4" y1="3.3" x2="5.4" y2="3.3" width="0.254" layer="21"/>
 <wire x1="0.5" y1="3.3" x2="2.4" y2="3.3" width="0.254" layer="21"/>
+<text x="3.81" y="-2.54" size="0.4064" layer="25">&gt;NAME</text>
 </package>
 <package name="USB-B-MICRO-SMD_V03">
 <text x="-4.66" y="5.96" size="0.3048" layer="51">PCB Front</text>
@@ -18506,7 +18507,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="TIP" pad="TIP"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10676"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -18543,7 +18546,9 @@ where those pins aren't required, to reduce the likelihood of bridges.</descript
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11752"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -19128,6 +19133,19 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </technologies>
 </device>
 <device name="NO_SILK_YES_STOP" package="1X06_NO_SILK_YES_STOP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO_SILK_NO_POP" package="1X06_NO_SILK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -20188,11 +20206,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J3" library="SparkFun-Connectors" deviceset="USB-MICROB" device="REDUCED_PASTE" value="USB-MICROB"/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J5" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
-<part name="J6" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
-<part name="J7" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
-<part name="J8" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
-<part name="J9" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="M03" device="LOCK">
+<attribute name="PROD_ID" value="CONN-09692"/>
+</part>
+<part name="J6" library="SparkFun-Connectors" deviceset="M03" device="LOCK">
+<attribute name="PROD_ID" value="CONN-09692"/>
+</part>
+<part name="J7" library="SparkFun-Connectors" deviceset="M03" device="LOCK">
+<attribute name="PROD_ID" value="CONN-09692"/>
+</part>
+<part name="J8" library="SparkFun-Connectors" deviceset="M03" device="LOCK">
+<attribute name="PROD_ID" value="CONN-09692"/>
+</part>
+<part name="J9" library="SparkFun-Connectors" deviceset="M03" device="LOCK">
+<attribute name="PROD_ID" value="CONN-09692"/>
+</part>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -20210,7 +20238,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="BAT20J"/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="J11" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
+<part name="J11" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_NO_POP"/>
 <part name="U4" library="SparkFun-AnalogIC" deviceset="SN74LVC1G66_SPST_AMUX" device="" value="SN74LVC1G66"/>
 <part name="U5" library="SparkFun-AnalogIC" deviceset="SN74LVC1G66_SPST_AMUX" device="" value="SN74LVC1G66"/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
@@ -20312,11 +20340,21 @@ JUMPER</text>
 <instance part="J3" gate="G$1" x="81.28" y="68.58" rot="R180"/>
 <instance part="SUPPLY12" gate="G$1" x="104.14" y="73.66"/>
 <instance part="GND2" gate="1" x="88.9" y="55.88"/>
-<instance part="J5" gate="J$1" x="7.62" y="71.12"/>
-<instance part="J6" gate="J$1" x="7.62" y="55.88"/>
-<instance part="J7" gate="J$1" x="7.62" y="40.64"/>
-<instance part="J8" gate="J$1" x="38.1" y="71.12"/>
-<instance part="J9" gate="J$1" x="38.1" y="55.88"/>
+<instance part="J5" gate="J$1" x="7.62" y="71.12">
+<attribute name="PROD_ID" x="7.62" y="71.12" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J6" gate="J$1" x="7.62" y="55.88">
+<attribute name="PROD_ID" x="7.62" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J7" gate="J$1" x="7.62" y="40.64">
+<attribute name="PROD_ID" x="7.62" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J8" gate="J$1" x="38.1" y="71.12">
+<attribute name="PROD_ID" x="38.1" y="71.12" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J9" gate="J$1" x="38.1" y="55.88">
+<attribute name="PROD_ID" x="38.1" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY13" gate="G$1" x="20.32" y="78.74"/>
 <instance part="SUPPLY14" gate="G$1" x="50.8" y="78.74"/>
 <instance part="GND3" gate="1" x="17.78" y="33.02"/>
