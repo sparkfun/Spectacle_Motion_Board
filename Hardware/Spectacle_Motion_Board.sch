@@ -20232,7 +20232,7 @@ near U1G4.25</text>
 <wire x1="106.68" y1="185.42" x2="106.68" y2="114.3" width="0.3048" layer="97" style="longdash"/>
 <wire x1="66.04" y1="86.36" x2="0" y2="86.36" width="0.3048" layer="97" style="longdash"/>
 <text x="165.1" y="7.62" size="3.81" layer="94" font="vector">Mike Hord</text>
-<text x="239.268" y="6.604" size="3.81" layer="94" font="vector">02</text>
+<text x="239.268" y="6.604" size="3.81" layer="94" font="vector">03</text>
 <wire x1="106.68" y1="114.3" x2="248.92" y2="114.3" width="0.3048" layer="97" style="longdash"/>
 <text x="109.22" y="116.84" size="3.81" layer="97" font="vector">MCU</text>
 <text x="185.42" y="109.22" size="3.81" layer="97" font="vector">Connectors</text>
