@@ -1,5 +1,5 @@
 
-Spectacle_Servo_Control_Board=/home/mike.hord/dropbox/Projects/Spectacle/Spectacle_Servo_Control_Board/Firmware/Spectacle_Servo_Control_Board CD=. filter="*.h *.c" {
+Spectacle_Servo_Control_Board=/cygdrive/C/Dropbox/Projects/Spectacle/Spectacle_Motion_Board/Firmware/Spectacle_Servo_Control_Board CD=. filter="*.h *.c" {
  Spectacle_Servo_Control_Board.cydsn=Spectacle_Servo_Control_Board.cydsn {
   cyapicallbacks.h
   servo.h

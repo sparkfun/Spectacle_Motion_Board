@@ -15,46 +15,53 @@ void loop()
 {
   if (digitalRead(2) != HIGH)
   {
-    sendCmd(0, 1, 0, 1000, 2000, 750);
-    delay(50);
-    while(digitalRead(2) == LOW);
+    sendCmd(0, 500);
+    while(digitalRead(2) == LOW)
+    {
+    }
+    sendCmd(0, 0);
   }
   if (digitalRead(3) != HIGH)
   {
-    sendCmd(0, 1, 1, 1000, 2000, 0);
-    delay(50);
-    while(digitalRead(3) == LOW);
+    sendCmd(1, 500);
+    while(digitalRead(3) == LOW)
+    {
+    }
+    sendCmd(1,0);
   }
   if (digitalRead(4) != HIGH)
   {
-    sendCmd(0, 1, 2, 1000, 2000, 500);
-    delay(50);
-    while(digitalRead(4) == LOW);
+      sendCmd(2, 500);
+    while(digitalRead(4) == LOW)
+    {
+    }
+    sendCmd(2, 0);
   }
   if (digitalRead(5) != HIGH)
   {
-    sendCmd(0, 1, 0, 1000, 2000, 750);
-    delay(50);
-    while(digitalRead(5) == LOW);
+      sendCmd(3, 500);
+    while(digitalRead(5) == LOW)
+    {
+      delay(15);
+    }
+    sendCmd(3, 0);
   }
   if (digitalRead(6) != HIGH)
   {
-    sendCmd(0, 1, 0, 1000, 2000, 750);
-    delay(50);
-    while(digitalRead(6) == LOW);
+      sendCmd(4, 500);
+    while(digitalRead(6) == LOW)
+    {
+    }
+    sendCmd(4, 0);
   }
 }
 
-void sendCmd(byte offset, byte event, byte mode,
-             int base, int base2, int dwell)
+void sendCmd(byte offset, uint16_t value)
 {
   Wire.beginTransmission(0x08);
-  Wire.write(offset);
-  Wire.write(event);
-  Wire.write(mode);
-  Wire.write((uint8_t*)&base, 2);
-  Wire.write((uint8_t*)&base2, 2);
-  Wire.write((uint8_t*)&dwell, 2);
+  Wire.write(2*offset);
+  Wire.write(value);
+  Wire.write(value>>8);
   Wire.endTransmission();
 }
 
