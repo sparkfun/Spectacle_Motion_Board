@@ -37,8 +37,13 @@
       <Folder BuildType="STRICT" Path="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn">
         <Files Root="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
+          <File BuildType="BUILD" Toolchain="">servo.c</File>
+          <File BuildType="BUILD" Toolchain="">programming.c</File>
+          <File BuildType="BUILD" Toolchain="">debug.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">servo.h</File>
+          <File BuildType="BUILD" Toolchain="">programming.h</File>
+          <File BuildType="BUILD" Toolchain="">debug.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\Generated_Source\PSoC4">

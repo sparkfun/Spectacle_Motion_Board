@@ -1,6 +1,8 @@
 #ifndef __servo_h_
-  #define __servo_h_
-  
+#define __servo_h_
+#include <project.h>  
+
+#pragma pack(1)
 struct servo
 {
   uint8 channel;
@@ -16,8 +18,14 @@ struct servo
   uint16 currPos;
   int32 servoTimer;
 };
+#pragma pack()
 
 enum {SWEEP_RETURN, SWEEP, WAG, GOTO};
+
+void sweepReturn(struct servo *behavior);
+void sweep(struct servo *behavior);
+void wag(struct servo *behavior);
+void goTo(struct servo *behavior);
 
 struct servo copyBehavior(struct servo *copyMe);
 struct servo servoInit(uint8 channel, int16 threshold, uint8 servoID,

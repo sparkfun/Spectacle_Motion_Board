@@ -2,8 +2,13 @@
 Spectacle_Servo_Control_Board=/cygdrive/C/Dropbox/Projects/Spectacle/Spectacle_Motion_Board/Firmware/Spectacle_Servo_Control_Board CD=. filter="*.h *.c" {
  Spectacle_Servo_Control_Board.cydsn=Spectacle_Servo_Control_Board.cydsn {
   cyapicallbacks.h
+  debug.h
+  programming.h
   servo.h
+  debug.c
   main.c
+  programming.c
+  servo.c
   codegentemp=codegentemp {
    Clock_1.h
    cmsis_armcc.h
