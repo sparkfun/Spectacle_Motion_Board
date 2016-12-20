@@ -715,6 +715,39 @@
 #define Servo_4__PS CYREG_GPIO_PRT2_PS
 #define Servo_4__SHIFT 0u
 
+/* I2C_Enable */
+#define I2C_Enable__0__DR CYREG_GPIO_PRT2_DR
+#define I2C_Enable__0__DR_CLR CYREG_GPIO_PRT2_DR_CLR
+#define I2C_Enable__0__DR_INV CYREG_GPIO_PRT2_DR_INV
+#define I2C_Enable__0__DR_SET CYREG_GPIO_PRT2_DR_SET
+#define I2C_Enable__0__HSIOM CYREG_HSIOM_PORT_SEL2
+#define I2C_Enable__0__HSIOM_MASK 0x00000F00u
+#define I2C_Enable__0__HSIOM_SHIFT 8u
+#define I2C_Enable__0__INTCFG CYREG_GPIO_PRT2_INTR_CFG
+#define I2C_Enable__0__INTR CYREG_GPIO_PRT2_INTR
+#define I2C_Enable__0__INTR_CFG CYREG_GPIO_PRT2_INTR_CFG
+#define I2C_Enable__0__INTSTAT CYREG_GPIO_PRT2_INTR
+#define I2C_Enable__0__MASK 0x04u
+#define I2C_Enable__0__PC CYREG_GPIO_PRT2_PC
+#define I2C_Enable__0__PC2 CYREG_GPIO_PRT2_PC2
+#define I2C_Enable__0__PORT 2u
+#define I2C_Enable__0__PS CYREG_GPIO_PRT2_PS
+#define I2C_Enable__0__SHIFT 2u
+#define I2C_Enable__DR CYREG_GPIO_PRT2_DR
+#define I2C_Enable__DR_CLR CYREG_GPIO_PRT2_DR_CLR
+#define I2C_Enable__DR_INV CYREG_GPIO_PRT2_DR_INV
+#define I2C_Enable__DR_SET CYREG_GPIO_PRT2_DR_SET
+#define I2C_Enable__INTCFG CYREG_GPIO_PRT2_INTR_CFG
+#define I2C_Enable__INTR CYREG_GPIO_PRT2_INTR
+#define I2C_Enable__INTR_CFG CYREG_GPIO_PRT2_INTR_CFG
+#define I2C_Enable__INTSTAT CYREG_GPIO_PRT2_INTR
+#define I2C_Enable__MASK 0x04u
+#define I2C_Enable__PC CYREG_GPIO_PRT2_PC
+#define I2C_Enable__PC2 CYREG_GPIO_PRT2_PC2
+#define I2C_Enable__PORT 2u
+#define I2C_Enable__PS CYREG_GPIO_PRT2_PS
+#define I2C_Enable__SHIFT 2u
+
 /* Miscellaneous */
 #define CY_PROJECT_NAME "Spectacle_Servo_Control_Board"
 #define CY_VERSION "PSoC Creator  4.0"

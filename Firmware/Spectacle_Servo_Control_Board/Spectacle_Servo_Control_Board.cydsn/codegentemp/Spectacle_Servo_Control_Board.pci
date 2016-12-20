@@ -1,5 +1,5 @@
 # Spectacle_Servo_Control_Board
-# 2016-11-18 19:56:52Z
+# 2016-11-18 23:12:39Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
@@ -16,3 +16,4 @@ set_io "Servo_2(0)" iocell 1 0
 set_io "Servo_3(0)" iocell 1 2
 set_io "Servo_4(0)" iocell 2 0
 set_io "LED(0)" iocell 2 7
+set_io "I2C_Enable(0)" iocell 2 2

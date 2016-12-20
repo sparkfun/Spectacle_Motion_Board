@@ -21,15 +21,13 @@ CY_ISR_PROTO(tickISR);
 // only one servo struct should associate with a channel coming into the board.
 // behaviors is the list of behaviors that the director board has passed into
 // the servo board.
-//struct servo behaviors[5];
+struct servo *behaviors;
 
 // behaviorListLen is the variable which tracks the number of behaviors that
 // the director board has passed into the servo board. During normal operation,
 // we will iterate over the object 'behaviors' 'behaviorListLen' times every 10
 // milliseconds.
 int behaviorListLen = 0;
-
- struct servo *behaviors;
 
 // mailboxes is where our channel data comes in. A spectacle system can have
 // up to 64 channels of behaviors, each of which is an int16.
@@ -83,16 +81,16 @@ int main()
   int i = 0;            // loop variable
 
   // Here we configure our behaviors list to be some number of servo structs.
-  // Currently doesn't work, and I don't know why.
 
-  behaviors = malloc(64*sizeof(behaviors));
-  //behaviorListLen=5;
+  behaviors = malloc(64*sizeof(struct servo));
 
   // Turn LED on. This is a useful check on whether or not the code made it
   // through the initialization process. If it did, the LED will come on. If
   // not, the LED stays off. If it gets hung in the loop, the LED will stop
   // blinking.
   LED_Write(1);
+
+  I2C_Enable_Write(1);
 
   ///////////////////////////////////////////////////////////////////////////
   // setting up some test structs for behaviors.

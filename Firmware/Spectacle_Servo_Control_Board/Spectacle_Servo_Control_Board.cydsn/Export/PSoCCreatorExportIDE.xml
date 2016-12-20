@@ -176,6 +176,10 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_Enable.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_Enable.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_Enable_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_Enable_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

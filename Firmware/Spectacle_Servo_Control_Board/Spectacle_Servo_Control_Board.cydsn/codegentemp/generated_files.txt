@@ -80,6 +80,10 @@
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\LED.h" value="HEADER;;;;;LED" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\LED_aliases.h" value="HEADER;;;;;LED" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\LED_PM.c" value="SOURCE_C;CortexM0p;;;;LED" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\I2C_Enable.c" value="SOURCE_C;CortexM0p;;;;I2C_Enable" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\I2C_Enable.h" value="HEADER;;;;;I2C_Enable" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\I2C_Enable_aliases.h" value="HEADER;;;;;I2C_Enable" />
+  <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\I2C_Enable_PM.c" value="SOURCE_C;CortexM0p;;;;I2C_Enable" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\EZI2C_SCBCLK.c" value="SOURCE_C;CortexM0p;;;;EZI2C_SCBCLK" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\EZI2C_SCBCLK.h" value="HEADER;;;;;EZI2C_SCBCLK" />
   <file name="C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\codegentemp\EZI2C_sda.c" value="SOURCE_C;CortexM0p;;;;EZI2C_sda" />

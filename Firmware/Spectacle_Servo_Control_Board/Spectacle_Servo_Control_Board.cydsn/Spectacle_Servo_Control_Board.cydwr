@@ -17,6 +17,7 @@
     </Group>
     <Group key="Pin">
       <Data key="0b741a12-2e23-4460-886a-041005b4e9df" value="Servo_4" />
+      <Data key="6b374e80-d990-469f-8f80-665058607e66" value="I2C_Enable" />
       <Data key="06bc4098-ac09-41f3-b274-69f8b93fb3c7" value="Servo_2" />
       <Data key="7c22e3c5-da93-4267-9ea2-622856a53add/5382e105-1382-4a2e-b9f4-3bb2feba71e0" value="EZI2C_sda" />
       <Data key="7c22e3c5-da93-4267-9ea2-622856a53add/22863ebe-a37b-476f-b252-6e49a8c00b12" value="EZI2C_scl" />
@@ -1960,6 +1961,11 @@
     <Group key="0b741a12-2e23-4460-886a-041005b4e9df">
       <Group key="0">
         <Data key="Port Format" value="2,0" />
+      </Group>
+    </Group>
+    <Group key="6b374e80-d990-469f-8f80-665058607e66">
+      <Group key="0">
+        <Data key="Port Format" value="2,2" />
       </Group>
     </Group>
     <Group key="06bc4098-ac09-41f3-b274-69f8b93fb3c7">

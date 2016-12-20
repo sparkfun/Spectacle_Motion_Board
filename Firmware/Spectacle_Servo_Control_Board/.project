@@ -39,6 +39,8 @@ Spectacle_Servo_Control_Board=/cygdrive/C/Dropbox/Projects/Spectacle/Spectacle_M
    EZI2C_scl_aliases.h
    EZI2C_sda.h
    EZI2C_sda_aliases.h
+   I2C_Enable.h
+   I2C_Enable_aliases.h
    LED.h
    LED_aliases.h
    project.h
@@ -89,6 +91,8 @@ Spectacle_Servo_Control_Board=/cygdrive/C/Dropbox/Projects/Spectacle/Spectacle_M
    EZI2C_scl_PM.c
    EZI2C_sda.c
    EZI2C_sda_PM.c
+   I2C_Enable.c
+   I2C_Enable_PM.c
    LED.c
    LED_PM.c
    PWM_0.c
@@ -158,6 +162,8 @@ Spectacle_Servo_Control_Board=/cygdrive/C/Dropbox/Projects/Spectacle/Spectacle_M
     EZI2C_scl_aliases.h
     EZI2C_sda.h
     EZI2C_sda_aliases.h
+    I2C_Enable.h
+    I2C_Enable_aliases.h
     LED.h
     LED_aliases.h
     project.h
@@ -211,6 +217,8 @@ Spectacle_Servo_Control_Board=/cygdrive/C/Dropbox/Projects/Spectacle/Spectacle_M
     EZI2C_scl_PM.c
     EZI2C_sda.c
     EZI2C_sda_PM.c
+    I2C_Enable.c
+    I2C_Enable_PM.c
     LED.c
     LED_PM.c
     PWM_0.c

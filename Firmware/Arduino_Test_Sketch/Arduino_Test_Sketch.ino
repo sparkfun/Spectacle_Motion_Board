@@ -19,12 +19,13 @@ void setup()
   Serial.begin(115200);
 
   // Teach the daughter board about the behaviors we want it to use.
+  /*sendByte(PROG_ENABLE_REG, 1);
   servoInit(0, 100, 4, SWEEP, 1000, 2000, 2000, 2000);
   servoInit(1, 32, 4, SWEEP, 1500, 2000, 2000, 2000);
   servoInit(2, 64, 4, SWEEP, 2000, 2000, 2000, 2000);
   servoInit(3, 128, 4, SWEEP, 1000, 2000, 2000, 2000);
   servoInit(4, 255, 4, SWEEP, 1000, 2000, 2000, 2000);
-  sendByte(PROG_ENABLE_REG, 0);
+  sendByte(PROG_ENABLE_REG, 0);*/
 }
 
 void loop() 
@@ -135,7 +136,6 @@ void servoInit(uint8_t channel, int16_t threshold, uint8_t servoID,
                uint8_t mode, uint16_t posA, uint16_t posB, 
                uint32_t dwellA, uint32_t dwellB)
 {
-  sendByte(PROG_ENABLE_REG, 1);
   while (progReady() == 0);
   sendByte(INC_STRUCT_TOP, channel);
   sendWord(INC_STRUCT_TOP + 1, threshold);
