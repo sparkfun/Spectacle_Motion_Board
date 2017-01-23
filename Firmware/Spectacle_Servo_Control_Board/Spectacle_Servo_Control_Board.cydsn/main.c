@@ -6,6 +6,7 @@
 #include "servo.h"
 #include "programming.h"
 #include "debug.h"
+#include "spectacle.h"
 
 #define I2C_BUFFER_SIZE 256
 #define I2C_BUFFER_RW_BOUNDARY 256
@@ -57,6 +58,7 @@ int main()
   I2C_Mem[PROG_ENABLE_REG] = 0;
   I2C_Mem[PROG_READY_REG] = 0;
   I2C_Mem[DATA_READY_REG] = 0;
+  I2C_Mem[BOARD_ID_REG] = BOARD_ID;
 
   // This is the startup code for the incoming I2C peripheral. We first enable
   // the peripheral, then tell it what it needs to know about the memory it
@@ -90,8 +92,6 @@ int main()
   // blinking.
   LED_Write(1);
 
-  I2C_Enable_Write(1);
-
   ///////////////////////////////////////////////////////////////////////////
   // setting up some test structs for behaviors.
 
@@ -122,6 +122,12 @@ int main()
       if (I2C_Mem[PROG_ENABLE_REG] == 1)
       {
         program();
+      }
+      if (I2C_Mem[CONFIGURED_REG] == 1)
+      {
+        EZI2C_EzI2CSetAddress1(I2C_Mem[I2C_ADDR_REG]);
+        I2C_Mem[CONFIGURED_REG] = 0;
+        I2C_OUT_EN_Write(1);
       }
 
       // Behavior loop. We'll cycle through this loop for each behavior that we

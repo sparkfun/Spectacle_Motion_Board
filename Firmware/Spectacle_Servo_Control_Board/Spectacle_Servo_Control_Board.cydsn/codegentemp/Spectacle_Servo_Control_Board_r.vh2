@@ -1,5 +1,5 @@
 -- Project:   Spectacle_Servo_Control_Board
--- Generated: 11/18/2016 16:12:40
+-- Generated: 12/28/2016 13:32:12
 -- PSoC Creator  4.0
 
 ENTITY Spectacle_Servo_Control_Board IS
@@ -14,7 +14,7 @@ ENTITY Spectacle_Servo_Control_Board IS
         Servo_3(0)_PAD : OUT std_ulogic;
         Servo_4(0)_PAD : OUT std_ulogic;
         LED(0)_PAD : OUT std_ulogic;
-        I2C_Enable(0)_PAD : OUT std_ulogic);
+        I2C_OUT_EN(0)_PAD : OUT std_ulogic);
     ATTRIBUTE voltage_VDDD_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 3.3e0;
@@ -29,7 +29,7 @@ ARCHITECTURE __DEFAULT__ OF Spectacle_Servo_Control_Board IS
     SIGNAL ClockBlock_LFCLK : bit;
     SIGNAL ClockBlock_SYSCLK : bit;
     SIGNAL ClockBlock_WCO : bit;
-    SIGNAL I2C_Enable(0)__PA : bit;
+    SIGNAL I2C_OUT_EN(0)__PA : bit;
     SIGNAL LED(0)__PA : bit;
     SIGNAL Net_359 : bit;
     SIGNAL Net_361 : bit;
@@ -131,7 +131,7 @@ ARCHITECTURE __DEFAULT__ OF Spectacle_Servo_Control_Board IS
     ATTRIBUTE Location OF Servo_3(0) : LABEL IS "P1[2]";
     ATTRIBUTE Location OF Servo_4(0) : LABEL IS "P2[0]";
     ATTRIBUTE Location OF LED(0) : LABEL IS "P2[7]";
-    ATTRIBUTE Location OF I2C_Enable(0) : LABEL IS "P2[2]";
+    ATTRIBUTE Location OF I2C_OUT_EN(0) : LABEL IS "P2[2]";
     ATTRIBUTE Location OF \PWM_0:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,0)";
     ATTRIBUTE Location OF \EZI2C:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(9)]";
     ATTRIBUTE Location OF \EZI2C:SCB\ : LABEL IS "F(SCB,2)";
@@ -1277,7 +1277,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    I2C_Enable:logicalport
+    I2C_OUT_EN:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1348,18 +1348,18 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    I2C_Enable(0):iocell
+    I2C_OUT_EN(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "I2C_Enable",
+            logicalport => "I2C_OUT_EN",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => I2C_Enable(0)__PA,
+            pa_out => I2C_OUT_EN(0)__PA,
             oe => open,
-            pad_in => I2C_Enable(0)_PAD,
+            pad_in => I2C_OUT_EN(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',

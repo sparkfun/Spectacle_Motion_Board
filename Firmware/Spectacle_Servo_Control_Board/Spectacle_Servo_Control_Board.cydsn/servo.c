@@ -9,7 +9,7 @@ void (*setServo[5])(uint32) = {PWM_0_WriteCompare, PWM_1_WriteCompare,
                        PWM_2_WriteCompare, PWM_3_WriteCompare,
                        PWM_4_WriteCompare};
 
-extern int16 mailboxes[64];
+extern int16 mailboxes[128];
 
 void sweepReturn(struct servo *behavior)
 {
@@ -124,10 +124,9 @@ void wag(struct servo *behavior)
 {
   if (behavior->active == 1)
   {
-    if (mailboxes[behavior->channel] > behavior->threshold)
+    if (mailboxes[behavior->channel] < behavior->threshold)
     {
       behavior->active = 0;
-      mailboxes[behavior->channel] = 0;
     }
     else if (behavior->currPos == behavior->posA)
     {
@@ -156,13 +155,12 @@ void wag(struct servo *behavior)
       }
     }
   } // if (behavior->active == 1)
-  else //active != 1
+  else if (behavior->active == 0)//active != 1
   {
     if (mailboxes[behavior->channel] > behavior->threshold)
     {
       behavior->servoTimer = systemTimer;
       behavior->active = 1;
-      mailboxes[behavior->channel] = 0;
     }
   } // active != 1
 
