@@ -1,4 +1,4 @@
---------------- Build Started: 01/25/2017 10:19:11 Project: Spectacle_Servo_Control_Board, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+--------------- Build Started: 01/25/2017 11:07:34 Project: Spectacle_Servo_Control_Board, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0p\ARM_GCC_493\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c main.c -o .\CortexM0p\ARM_GCC_493\Debug\main.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0p\ARM_GCC_493\Debug/servo.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c servo.c -o .\CortexM0p\ARM_GCC_493\Debug\servo.o
@@ -8,6 +8,6 @@ arm-none-eabi-ar.exe: creating .\CortexM0p\ARM_GCC_493\Debug\Spectacle_Servo_Con
 arm-none-eabi-gcc.exe -Wl,--start-group -o .\CortexM0p\ARM_GCC_493\Debug\Spectacle_Servo_Control_Board.elf .\CortexM0p\ARM_GCC_493\Debug\main.o .\CortexM0p\ARM_GCC_493\Debug\servo.o .\CortexM0p\ARM_GCC_493\Debug\programming.o .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o .\CortexM0p\ARM_GCC_493\Debug\Spectacle_Servo_Control_Board.a -mcpu=cortex-m0plus -mthumb -g -ffunction-sections -Og -ffat-lto-objects -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0p\ARM_GCC_493\Debug/Spectacle_Servo_Control_Board.map -T C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\Generated_Source\PSoC4\cm0plusgcc.ld -specs=nano.specs -Wl,--gc-sections -Wl,--end-group
 cyelftool.exe -C C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\CortexM0p\ARM_GCC_493\Debug\Spectacle_Servo_Control_Board.elf --flash_row_size 128 --flash_size 65536
 cyelftool.exe -S C:\Dropbox\Projects\Spectacle\Spectacle_Motion_Board\Firmware\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydsn\CortexM0p\ARM_GCC_493\Debug\Spectacle_Servo_Control_Board.elf
-Flash used: 6544 of 65536 bytes (10.0 %).
+Flash used: 6584 of 65536 bytes (10.0 %).
 SRAM used: 5284 of 8192 bytes (64.5 %). Stack: 2048 bytes. Heap: 2560 bytes.
---------------- Build Succeeded: 01/25/2017 10:19:12 ---------------
+--------------- Build Succeeded: 01/25/2017 11:07:35 ---------------

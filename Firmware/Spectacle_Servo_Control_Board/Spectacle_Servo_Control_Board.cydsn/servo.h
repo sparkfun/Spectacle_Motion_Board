@@ -19,6 +19,8 @@ local, and you've found our code helpful, please buy us a round!
 #define __servo_h_
 #include <project.h>  
 
+#define USER_DATA_LEN 17
+    
 #pragma pack(1)
 struct servo
 {
@@ -30,6 +32,7 @@ struct servo
   uint16 posB;
   int32 dwellA;
   int32 dwellB;
+    // end of user configurable data
   uint8 pending;
   uint8 active;
   uint16 currPos;
