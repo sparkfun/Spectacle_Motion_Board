@@ -1,3 +1,19 @@
+/****************************************************************************
+servo.c
+Implementations for servo functionality
+Mike Hord @ SparkFun Electronics
+24 Jan 2017
+https://github.com/sparkfun/Spectacle_Motion_Board
+
+This file implements the functions for creating the motions.
+
+Development environment specifics:
+Developed in PSoC Creator 4.0
+
+This code is beerware; if you see me (or any other SparkFun employee) at the
+local, and you've found our code helpful, please buy us a round!
+****************************************************************************/
+
 #include <project.h>
 #include "servo.h"
 

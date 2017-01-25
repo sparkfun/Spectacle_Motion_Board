@@ -1,3 +1,20 @@
+/****************************************************************************
+programming.c
+Receiving function from director board
+Mike Hord @ SparkFun Electronics
+24 Jan 2017
+https://github.com/sparkfun/Spectacle_Motion_Board
+
+Contains the function which receives configuration data from the director board
+and stores it away for later use.
+
+Development environment specifics:
+Developed in PSoC Creator 4.0
+
+This code is beerware; if you see me (or any other SparkFun employee) at the
+local, and you've found our code helpful, please buy us a round!
+****************************************************************************/
+
 #include <project.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -10,7 +27,6 @@ extern volatile uint8 *I2C_Mem;
 
 void program(void)
 {
-  char buffer[32];
   uint8 i = 0;
   behaviorListLen = 0;
   I2C_Mem[DATA_READY_REG] = 0;

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\spectacle.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\servo.c">
 <ExpandedNodeIds>
 <v>Spectacle_Servo_Control_Board</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board</v>
@@ -27,13 +27,10 @@
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydwr\Directives</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydwr\Flash Security</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files</v>
-<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\cyapicallbacks.h</v>
-<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\debug.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\programming.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\servo.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\spectacle.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files</v>
-<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\debug.c</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\programming.c</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\servo.c</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Generated_Source</v>
@@ -57,13 +54,10 @@
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydwr\Directives</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board.cydwr\Flash Security</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files</v>
-<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\cyapicallbacks.h</v>
-<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\debug.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\programming.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\servo.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Header Files\spectacle.h</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files</v>
-<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\debug.c</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\main.c</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\programming.c</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Source Files\servo.c</v>
@@ -93,6 +87,9 @@
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Generated_Source\PSoC4\Servo_2</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Generated_Source\PSoC4\Servo_3</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Generated_Source\PSoC4\Servo_4</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Generated_Source\PSoC4\UART</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Generated_Source\PSoC4\UART_rx</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\Generated_Source\PSoC4\UART_SCBCLK</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -129,7 +126,6 @@
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\debug.lst</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C.lst</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_BOOT.lst</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_EZI2C.lst</v>
@@ -191,6 +187,52 @@
 <VisibleNodeIds>
 <v>Spectacle_Servo_Control_Board</v>
 <v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\Cm0plusStart.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_BOOT.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_EZI2C.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_EZI2C_BOOT.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_EZI2C_INT.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_SCB_IRQ.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_SCBCLK.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_scl.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_scl_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_sda.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\EZI2C_sda_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\I2C_OUT_EN.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\I2C_OUT_EN_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\LED.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\LED_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\programming.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_0.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_0_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_1.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_2.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_2_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_3.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_3_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_4.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\PWM_4_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\servo.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\Servo_0.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\Servo_0_PM.lst</v>
+<v>Spectacle_Servo_Control_Board\Spectacle_Servo_Control_Board\CortexM0p\ARM_GCC_493\Debug\Listing Files\Servo_1.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -241,6 +283,10 @@
 <OpenDocs>
 <name v=".\Spectacle_Servo_Control_Board.cydsn\main.c" />
 <name v=".\Spectacle_Servo_Control_Board.cydsn\spectacle.h" />
+<name v=".\Spectacle_Servo_Control_Board.cydsn\programming.h" />
+<name v=".\Spectacle_Servo_Control_Board.cydsn\programming.c" />
+<name v=".\Spectacle_Servo_Control_Board.cydsn\servo.h" />
+<name v=".\Spectacle_Servo_Control_Board.cydsn\servo.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -248,7 +294,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1262, 711" SelectedTabbedMdiWindow="92b86f69-8345-4006-b269-ad3279f89c08"><DocumentWindow Key="d0b19603-4ac2-4f7a-84fb-426d6175a44d" Guid="92b86f69-8345-4006-b269-ad3279f89c08" /><DocumentWindow Key="ac7ba28f-ede3-4db1-aadb-e757a7e4804c" Guid="80426677-1532-419e-93f6-14c59c390902" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1262, 711" SelectedTabbedMdiWindow="a5d41e06-2ddb-4f11-b61f-7ec2b5f112fc"><DocumentWindow Key="c30c8767-86ea-4aed-8769-f83103526d9e" Guid="7986fd30-3d7a-4ed4-8f63-d4483192f2f2" /><DocumentWindow Key="c6ff373a-914e-4d1a-9fad-7d02ac185c4e" Guid="366b148c-3a08-4677-bc22-4b451c057df5" /><DocumentWindow Key="02209e47-4745-4a96-9692-9b93bd0d2328" Guid="efc946b4-c61e-4c73-ab41-c0d300d10954" /><DocumentWindow Key="433a47f1-b2a9-430f-82c3-567742f0b160" Guid="f16a3603-17f1-4d9c-b476-f81eda7ca5c1" /><DocumentWindow Key="489bf8eb-319b-4e3d-a5ab-b0c2294d2940" Guid="a5d41e06-2ddb-4f11-b61f-7ec2b5f112fc" /><DocumentWindow Key="8936235c-3586-486a-9420-477b52b1fc11" Guid="0fc82508-25e8-4b9c-a82f-156a73dc553e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

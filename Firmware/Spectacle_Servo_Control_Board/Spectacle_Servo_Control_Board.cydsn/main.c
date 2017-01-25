@@ -1,3 +1,20 @@
+/****************************************************************************
+main.c
+Main code file for Spectacle motion output board project
+Mike Hord @ SparkFun Electronics
+24 Jan 2017
+https://github.com/sparkfun/Spectacle_Motion_Board
+
+This file includes main(), which configures the hardware for the system as
+well as monitoring the data coming from the director board.
+
+Development environment specifics:
+Developed in PSoC Creator 4.0
+
+This code is beerware; if you see me (or any other SparkFun employee) at the
+local, and you've found our code helpful, please buy us a round!
+****************************************************************************/
+
 #include <project.h>
 #include <stdbool.h>
 #include <string.h>
@@ -5,7 +22,6 @@
 #include <stdio.h>
 #include "servo.h"
 #include "programming.h"
-#include "debug.h"
 #include "spectacle.h"
 
 #define I2C_BUFFER_SIZE 256
@@ -91,17 +107,6 @@ int main()
   // not, the LED stays off. If it gets hung in the loop, the LED will stop
   // blinking.
   LED_Write(1);
-
-  ///////////////////////////////////////////////////////////////////////////
-  // setting up some test structs for behaviors.
-
-  /*
-  behaviors[0] = servoInit(0, 100, 0, GOTO, 1000, 2000, 2000, 2000);
-  behaviors[1] = servoInit(1, 100, 0, GOTO, 1500, 2000, 2000, 2000);
-  behaviors[2] = servoInit(2, 100, 0, GOTO, 2000, 2000, 2000, 2000);
-  behaviors[3] = servoInit(3, 100, 3, GOTO, 1000, 2000, 2000, 2000);
-  behaviors[4] = servoInit(4, 100, 4, GOTO, 1000, 2000, 2000, 2000);
-  */
    
   for(;;)
   {
@@ -116,7 +121,6 @@ int main()
       if (rxBuffer == 'r')
       {
         UART_UartPutString("r happened\n");
-        printBehaviors();
       } // End serial RXhandler
 
       if (I2C_Mem[PROG_ENABLE_REG] == 1)

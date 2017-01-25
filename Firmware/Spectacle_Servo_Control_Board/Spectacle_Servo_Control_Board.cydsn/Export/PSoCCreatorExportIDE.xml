@@ -39,11 +39,8 @@
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">servo.c</File>
           <File BuildType="BUILD" Toolchain="">programming.c</File>
-          <File BuildType="BUILD" Toolchain="">debug.c</File>
-          <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">servo.h</File>
           <File BuildType="BUILD" Toolchain="">programming.h</File>
-          <File BuildType="BUILD" Toolchain="">debug.h</File>
           <File BuildType="BUILD" Toolchain="">spectacle.h</File>
         </Files>
       </Folder>
