@@ -1,6 +1,6 @@
 -- Project:   Spectacle_Servo_Control_Board
--- Generated: 12/28/2016 13:32:11
--- PSoC Creator  4.0
+-- Generated: 04/05/2017 11:00:00
+-- PSoC Creator  4.0 Update 1
 
 ENTITY Spectacle_Servo_Control_Board IS
     PORT(
@@ -332,12 +332,12 @@ BEGIN
             lfclk => ClockBlock_LFCLK,
             wco => ClockBlock_WCO,
             ff_div_0 => \EZI2C:Net_847_ff0\,
-            ff_div_1 => \UART:Net_847_ff1\,
             ff_div_4 => Net_446_ff4,
             ff_div_5 => Net_446_ff5,
             ff_div_6 => Net_446_ff6,
             ff_div_7 => Net_446_ff7,
-            ff_div_8 => Net_446_ff8);
+            ff_div_8 => Net_446_ff8,
+            ff_div_1 => \UART:Net_847_ff1\);
 
     \EZI2C:sda\:logicalport
         GENERIC MAP(

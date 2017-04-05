@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: cyfitter_cfg.c
 * 
-* PSoC Creator  4.0
+* PSoC Creator  4.0 Update 1
 *
 * Description:
 * This file contains device initialization code.
@@ -22,7 +22,6 @@
 #include "CyLib.h"
 #include "CyLFClk.h"
 #include "cyfitter_cfg.h"
-#include "cyapicallbacks.h"
 
 
 #if defined(__GNUC__) || defined(__ARMCC_VERSION)
@@ -164,36 +163,36 @@ static void ClockSetup(void)
 	CySysClkWriteImoFreq(48u);
 
 	/* Setup phase aligned clocks */
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL2, 0x00002F00u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF42u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL1, 0x00002F00u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF41u);
 	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL0, 0x00000500u);
 	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF40u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL1, 0x00002200u);
-	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF41u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL2, 0x0001A000u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF42u);
 
 	/* CYDEV_CLK_SELECT Starting address: CYDEV_CLK_SELECT */
 	CY_SET_XTND_REG32((void CYFAR *)(CYREG_CLK_SELECT), 0x00000000u);
 
 	/* CYDEV_PERI_PCLK_CTL8 Starting address: CYDEV_PERI_PCLK_CTL8 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL8), 0x00000042u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL8), 0x00000041u);
 
 	/* CYDEV_PERI_PCLK_CTL7 Starting address: CYDEV_PERI_PCLK_CTL7 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL7), 0x00000042u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL7), 0x00000041u);
 
 	/* CYDEV_PERI_PCLK_CTL6 Starting address: CYDEV_PERI_PCLK_CTL6 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL6), 0x00000042u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL6), 0x00000041u);
 
 	/* CYDEV_PERI_PCLK_CTL5 Starting address: CYDEV_PERI_PCLK_CTL5 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL5), 0x00000042u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL5), 0x00000041u);
 
 	/* CYDEV_PERI_PCLK_CTL4 Starting address: CYDEV_PERI_PCLK_CTL4 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL4), 0x00000042u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL4), 0x00000041u);
 
 	/* CYDEV_PERI_PCLK_CTL2 Starting address: CYDEV_PERI_PCLK_CTL2 */
 	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL2), 0x00000040u);
 
 	/* CYDEV_PERI_PCLK_CTL1 Starting address: CYDEV_PERI_PCLK_CTL1 */
-	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL1), 0x00000041u);
+	CY_SET_XTND_REG32((void CYFAR *)(CYREG_PERI_PCLK_CTL1), 0x00000042u);
 
 	(void)CyIntSetVector(11u, &CySysTimerIsr);
 	CyIntEnable(11u);
